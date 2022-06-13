@@ -77,6 +77,7 @@ python examples/train_pplr_cam.py \
 
 ## Testing 
 We use a single TITAN RTX GPU for testing.
+
 For Market-1501:
 ```
 CUDA_VISIBLE_DEVICE=0\
