@@ -20,7 +20,7 @@ from pplr.utils.serialization import load_checkpoint, copy_state_dict
 
 
 def get_data(name, data_dir, height, width, batch_size, workers):
-    root = osp.join(data_dir, name)
+    root = data_dir
 
     dataset = datasets.create(name, root)
     normalizer = T.Normalize(mean=[0.485, 0.456, 0.406],
@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
     # path
     working_dir = osp.dirname(osp.abspath(__file__))
-    parser.add_argument('--data-dir', type=str, metavar='PATH', default=osp.join(working_dir, '../data'))
+    parser.add_argument('--data-dir', type=str, metavar='PATH', default=osp.join(working_dir, 'data'))
 
     # testing configs
     parser.add_argument('--resume', type=str, required=True, metavar='PATH')
