@@ -1,7 +1,8 @@
-## Part-based Pseudo Label Refinement (PPLR)
+# Part-based Pseudo Label Refinement (PPLR)
 Official PyTorch implementation of [Part-based Pseudo Label Refinement for Unsupervised Person Re-identification](https://arxiv.org/abs/2203.14675) (CVPR 2022).
 
 ## Updates
+- [07/2022] Pretrained weights are released.
 - [06/2022] Code is released.
 
 ## Overview
@@ -77,6 +78,8 @@ python examples/train_pplr_cam.py \
 
 ## Testing 
 We use a single TITAN RTX GPU for testing.
+
+You can download pre-trained weights from this [link](https://drive.google.com/drive/folders/1m5wDOJG7qk62PjkoOpTspNmk0nhLc4Vi?usp=sharing).
 
 For Market-1501:
 ```
