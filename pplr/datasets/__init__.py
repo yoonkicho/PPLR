@@ -4,12 +4,14 @@ import warnings
 from .market1501 import Market1501
 from .msmt17 import MSMT17
 from .veri import VeRi
+from .dukemtmc import DukeMTMCreID
 
 
 __factory = {
     'market1501': Market1501,
     'msmt17': MSMT17,
-    'veri': VeRi
+    'veri': VeRi,
+    'dukemtmc': DukeMTMCreID,
 }
 
 
