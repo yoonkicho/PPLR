@@ -25,7 +25,7 @@ python setup.py develop
 cd examples && mkdir data
 ```
 Download the object re-ID datasets [Market-1501](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view), [MSMT17](https://arxiv.org/abs/1711.08565), and [VeRi-776](https://github.com/JDAI-CV/VeRidataset) to `PPLR/examples/data`.
-The directory should look like
+The directory should look like:
 ```
 PPLR/examples/data
 ├── Market-1501-v15.09.15
@@ -104,7 +104,7 @@ python examples/test.py \
 Some parts of the code is borrowed from [SpCL](https://github.com/yxgeee/SpCL).
 
 ## Citation
-If you find this code useful for your research, please consider citing our paper
+If you find this code useful for your research, please consider citing our paper:
 
 ````BibTex
 @inproceedings{cho2022part,
