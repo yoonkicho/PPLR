@@ -39,19 +39,19 @@ We use 384x128 sized images for Market-1501 and MSMT17 and 256x256 sized images 
 ### Training without camera labels
 For Market-1501:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr.py \
 -d market1501 --logs-dir $PATH_FOR_LOGS
 ```
 For MSMT17:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr.py \
 -d msmt17 --logs-dir $PATH_FOR_LOGS
 ```
 For VeRi-776:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr.py \
 -d veri -n 8 --height 256 --width 256 --eps 0.7 --logs-dir $PATH_FOR_LOGS
 ```
@@ -59,19 +59,19 @@ python examples/train_pplr.py \
 ### Training with camera labels
 For Market-1501:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr_cam.py \
 -d market1501 --eps 0.4 --logs-dir $PATH_FOR_LOGS
 ```
 For MSMT17:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr_cam.py \
 -d msmt17 --eps 0.6 --lam-cam 1.0 --logs-dir $PATH_FOR_LOGS
 ```
 For VeRi-776:
 ```
-CUDA_VISIBLE_DEVICE=0,1,2,3 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
 python examples/train_pplr_cam.py \
 -d veri -n 8 --height 256 --width 256 --eps 0.7 --logs-dir $PATH_FOR_LOGS
 ```
@@ -83,19 +83,19 @@ You can download pre-trained weights from this [link](https://drive.google.com/d
 
 For Market-1501:
 ```
-CUDA_VISIBLE_DEVICE=0\
+CUDA_VISIBLE_DEVICES=0\
 python examples/test.py \
 -d market1501 --resume $PATH_FOR_MODEL
 ```
 For MSMT17:
 ```
-CUDA_VISIBLE_DEVICE=0\
+CUDA_VISIBLE_DEVICES=0\
 python examples/test.py \
 -d msmt17 --resume $PATH_FOR_MODEL
 ```
 For VeRi-776:
 ```
-CUDA_VISIBLE_DEVICE=0\
+CUDA_VISIBLE_DEVICES=0\
 python examples/test.py \
 -d veri --height 256 --width 256 --resume $PATH_FOR_MODEL
 ```
